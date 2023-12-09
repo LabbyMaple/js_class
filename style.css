@@ -1,7 +1,11 @@
-h2 {
+h1 {
     color:mediumturquoise;
+    text-align: center;
 }
-
+h2{
+    text-align: center;
+    color: mediumturquoise;
+}
 .headd2 {
     color: azure;
 }
