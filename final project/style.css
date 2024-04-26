@@ -1,0 +1,121 @@
+body {
+    font-family: "Comic Neue", cursive;
+  }
+  
+  /* bulletin board background */
+  #container {
+    height: 95vh;
+    width: 95vw;
+    min-width: 1200px;
+    max-width: 1400px;
+    background-image: url("https://c1.wallpaperflare.com/preview/907/581/284/backdrop-background-blank-board.jpg");
+    background-size: cover;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 6px 5px rgba(0, 0, 0, 0.45);
+  }
+  
+  /* bulletin board title */
+  h1 {
+    font-size: 56px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* 5 sticky notes styling and positioning */
+  section {
+    width: 265px;
+    height: 210px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f8fdb4;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.35);
+    position: absolute;
+  }
+  
+  section:first-of-type {
+    top: 115px;
+    left: 85px;
+    transform: rotate(-9deg);
+  }
+  
+  section:nth-of-type(2) {
+    top: 130px;
+    right: 500px;
+    transform: rotate(-1deg);
+  }
+  
+  section:nth-of-type(3) {
+    top: 130px;
+    right: 60px;
+    transform: rotate(7deg);
+  }
+  
+  section:nth-of-type(4) {
+    bottom: 50px;
+    left: 320px;
+    transform: rotate(3deg);
+  }
+  
+  section:last-of-type {
+    bottom: 40px;
+    right: 260px;
+    transform: rotate(-3deg);
+  }
+  
+  /* image form */
+  p {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  
+  input {
+    width: 90%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #3d3d3d;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  button {
+    font-size: 14px;
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px 14px;
+  }
+  
+  /* image being displayed */
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .imageDisplay div {
+    display: none;
+  }
+  
+  section:hover .imageDisplay div {
+    display: block;
+  }
+  
+  /* clear button */
+  #clear-btn {
+    font-size: 18px;
+    position: absolute;
+    top: 45px;
+    right: 30px;
+  }
+  
+  #clear-btn:hover {
+    background-color: #f0f0f0;
+  }
